@@ -20,3 +20,4 @@ Abstrakcyjna klasa database ma zawierać odpowiednie metody do odperowania na CR
 WSZYSTKIE METODY OBIEKTU Z KLASY MYSQLDB MAJA BYĆ SPRAWDZONE I WYWOŁANE W KODZIE.
 !!!!!!!!!!!!!!! DODATKOWE PUNKTY BEDA UWZGLEDNIONE ZA IMPLEMENTACJE, WLASNEJ METODY LUB KLASY
 TESTUJĄCEJ POPRAWNOŚĆ DZIAŁANIA, METOD NASZEGO OBIEKTU/o
+Punkty dodatkowe za preparowane zapytania
