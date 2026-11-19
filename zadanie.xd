@@ -1,0 +1,22 @@
+Utwórz klase mysqldb która dziedziczy po klasie abstrakcyjnej database, wlaściwości, metody, oraz metody abstrakcyjne.
+Dołacz sql interfejs do mysqldb.
+Abstrakcyjna klasa powinna zawierać odpowiednie wlaściwosci do połączenia sie z baza danych za pomoca funkcji mysqli connect.
+Abstrakcyjna klasa database ma zawierać odpowiednie metody do odperowania na CRUD.
+1. Tworzenie bazy danych
+2. Tworzenie tabeli
+3. Odczytywanie danych z tabeli
+4. Aktualizacja tabeli
+5. Usuwanie tabeli
+6. Sql interfejs ma implemetnować metody takie jak findall(), find(), readone() readfirstten()
+
+
+
+
+
+
+
+
+
+WSZYSTKIE METODY OBIEKTU Z KLASY MYSQLDB MAJA BYĆ SPRAWDZONE I WYWOŁANE W KODZIE.
+!!!!!!!!!!!!!!! DODATKOWE PUNKTY BEDA UWZGLEDNIONE ZA IMPLEMENTACJE, WLASNEJ METODY LUB KLASY
+TESTUJĄCEJ POPRAWNOŚĆ DZIAŁANIA, METOD NASZEGO OBIEKTU/o
