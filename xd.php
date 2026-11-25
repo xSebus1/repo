@@ -1,25 +1,22 @@
 <?php
 
-    abstract class Database implements Sql {
+    interface SQL{
+        public function findall($id);
+        public function find($id);
+        public function readone($id);
+        public function readfirstten($id);
+    }
+
+    abstract class Database implements SQL {
 
         abstract public function tryToConnect(): boolval;
-
         abstract public function createRecord();
 
         abstract public function readRecord($tableName, $sortType, $limit, $id, $columns);
 
         abstract public function updateRecord($newValue, $changeBy, $id);
-
         abstract public function deleteRecord($id);
 
-
-    }
-
-    interface Sql{
-        public function findall($id);
-        public function find($id);
-        public function readone($id);
-        public function readfirstten($id);
     }
 
     class Mysqldb extends Database{
@@ -52,7 +49,7 @@
                         if (sizeof($rowName) > 4) {
                             $retVal = false;
                         }
-                        if ()
+
                     }
                 } catch (Exception $e) {
                     echo $e->getMessage();
@@ -72,6 +69,11 @@
                     $result = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_assoc($result)) {
                         $column = [$row];
+                        if ($columns = $column) {
+                            foreach ($column as $xd) {
+                                echo $xd;
+                            }
+                        }
                     }
                 } catch (Exception $e) {
                     echo $e->getMessage();
